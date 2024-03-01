@@ -126,9 +126,9 @@ public class ShipContainerScreen extends AbstractContainerScreen<ShipContainerMe
         }
 
         int leftPos = 260;
-        int leftPos2 = 323;
+        int leftPos2 = 310;
         int topPos = 38;
-        int gap = 14;
+        int gap = 15;
         guiGraphics.pose().pushPose();
         guiGraphics.pose().scale(0.7F, 0.7F, 1F);
         String attachment = this.containerShip instanceof Shieldable ? "방패:" : "함포:";
