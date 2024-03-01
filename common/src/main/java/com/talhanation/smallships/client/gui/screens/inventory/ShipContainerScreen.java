@@ -129,7 +129,7 @@ public class ShipContainerScreen extends AbstractContainerScreen<ShipContainerMe
         int leftPos2 = 310;
         int topPos = 38;
         int gap = 15;
-        guiGraphics.pose().pushPose();
+        //guiGraphics.pose().pushPose();
         guiGraphics.pose().scale(0.7F, 0.7F, 1F);
         String attachment = this.containerShip instanceof Shieldable ? "방패:" : "함포:";
 
@@ -147,7 +147,7 @@ public class ShipContainerScreen extends AbstractContainerScreen<ShipContainerMe
         guiGraphics.drawString(font, dmg + "%", leftPos2, topPos + gap * 4, FONT_COLOR, false);
         guiGraphics.drawString(font, currentAttachment + "/" + maxAttachment, leftPos2, topPos + gap * 5, FONT_COLOR, false);
 
-        guiGraphics.pose().popPose();
+        //guiGraphics.pose().popPose();
 
         if (this.pageCount > 1) guiGraphics.drawString(font, "" +  (this.pageIndex + 1) + "/"  + this.pageCount, (int) (133 - (float)(Mth.floor(Math.log10(this.pageCount))) * 6), this.rowCount*18+19, FONT_COLOR, false);
     }
