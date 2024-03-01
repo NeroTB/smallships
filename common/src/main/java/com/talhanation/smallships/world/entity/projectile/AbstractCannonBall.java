@@ -106,7 +106,7 @@ public abstract class AbstractCannonBall extends AbstractHurtingProjectile {
         super.onHitBlock(blockHitResult);
         if (!this.level().isClientSide()) {
             boolean doesSpreadFire = false;
-            if(!isInWater()) this.level().explode(this.getOwner(), getX(), getY(), getZ(), 1.25F, doesSpreadFire, Level.ExplosionInteraction.MOB);
+            if(!isInWater()) this.level().explode(this.getOwner(), getX(), getY(), getZ(), 4.0F, doesSpreadFire, Level.ExplosionInteraction.MOB);
             this.remove(RemovalReason.KILLED);
         }
     }
