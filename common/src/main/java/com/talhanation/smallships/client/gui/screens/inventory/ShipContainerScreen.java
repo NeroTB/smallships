@@ -125,7 +125,7 @@ public class ShipContainerScreen extends AbstractContainerScreen<ShipContainerMe
             }
         }
 
-        int leftPos = 270;
+        int leftPos = 265;
         int leftPos2 = 310;
         int topPos = 38;
         int gap = 15;
@@ -143,7 +143,7 @@ public class ShipContainerScreen extends AbstractContainerScreen<ShipContainerMe
         guiGraphics.drawString(font, name, leftPos2, topPos + gap * 0, FONT_COLOR, false);
         guiGraphics.drawString(font, smallShipType, leftPos2, topPos + gap * 1, FONT_COLOR, false);
         guiGraphics.drawString(font, currentPassengers + "/" + maxPassengers, leftPos2, topPos + gap * 2, FONT_COLOR, false);
-        guiGraphics.drawString(font, String.format("%02d %0.1f %s", Mth.ceil(currentSpeed), currentSpeed, unit), leftPos2, topPos + gap * 3, FONT_COLOR, false);
+        guiGraphics.drawString(font, String.format("%03.1f%s", currentSpeed, unit), leftPos2, topPos + gap * 3, FONT_COLOR, false);
         guiGraphics.drawString(font, dmg + "%", leftPos2, topPos + gap * 4, FONT_COLOR, false);
         guiGraphics.drawString(font, currentAttachment + "/" + maxAttachment, leftPos2, topPos + gap * 5, FONT_COLOR, false);
 
