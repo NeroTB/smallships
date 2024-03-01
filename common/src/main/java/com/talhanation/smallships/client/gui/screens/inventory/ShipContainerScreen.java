@@ -101,7 +101,7 @@ public class ShipContainerScreen extends AbstractContainerScreen<ShipContainerMe
 
         String unit;
         //int maxSpeed;
-        int currentSpeed;
+        float currentSpeed;
         switch (SmallShipsConfig.Client.shipModSpeedUnit.get()){
             default -> {
                 unit = "km/h";
