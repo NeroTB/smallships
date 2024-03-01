@@ -100,28 +100,28 @@ public class ShipContainerScreen extends AbstractContainerScreen<ShipContainerMe
         int dmg = (int) (this.containerShip.getDamage() * 100 / this.containerShip.getAttributes().maxHealth);
 
         String unit;
-        int maxSpeed;
+        //int maxSpeed;
         int currentSpeed;
         switch (SmallShipsConfig.Client.shipModSpeedUnit.get()){
             default -> {
                 unit = "km/h";
-                maxSpeed = (Mth.ceil(Kalkuel.getKilometerPerHour(this.containerShip.maxSpeed)));
-                currentSpeed = (Mth.ceil(Kalkuel.getKilometerPerHour(this.containerShip.getSpeed())));
+                //maxSpeed = (Mth.ceil(Kalkuel.getKilometerPerHour(this.containerShip.maxSpeed)));
+                currentSpeed = Kalkuel.getKilometerPerHour(this.containerShip.getSpeed());
             }
             case 1 -> {
                 unit = "m/s";
-                maxSpeed = (Mth.ceil(Kalkuel.getMeterPerSecond(this.containerShip.maxSpeed)));
-                currentSpeed = (Mth.ceil(Kalkuel.getMeterPerSecond(this.containerShip.getSpeed())));
+                //maxSpeed = (Mth.ceil(Kalkuel.getMeterPerSecond(this.containerShip.maxSpeed)));
+                currentSpeed = Kalkuel.getMeterPerSecond(this.containerShip.getSpeed());
             }
             case 2 -> {
                 unit = "knots";
-                maxSpeed = (Mth.ceil(Kalkuel.getKnots(this.containerShip.maxSpeed)));
-                currentSpeed = (Mth.ceil(Kalkuel.getKnots(this.containerShip.getSpeed())));
+                //maxSpeed = (Mth.ceil(Kalkuel.getKnots(this.containerShip.maxSpeed)));
+                currentSpeed = Kalkuel.getKnots(this.containerShip.getSpeed());
             }
             case 3 -> {
                 unit = "mph";
-                maxSpeed = (Mth.ceil(Kalkuel.getMilesPerHour(this.containerShip.maxSpeed)));
-                currentSpeed = (Mth.ceil(Kalkuel.getMilesPerHour(this.containerShip.getSpeed())));
+                //maxSpeed = (Mth.ceil(Kalkuel.getMilesPerHour(this.containerShip.maxSpeed)));
+                currentSpeed = Kalkuel.getMilesPerHour(this.containerShip.getSpeed());
             }
         }
 
@@ -131,19 +131,19 @@ public class ShipContainerScreen extends AbstractContainerScreen<ShipContainerMe
         int gap = 14;
         guiGraphics.pose().pushPose();
         guiGraphics.pose().scale(0.7F, 0.7F, 1F);
-        String attachment = this.containerShip instanceof Shieldable ? "Shields:" : "Cannons:";
+        String attachment = this.containerShip instanceof Shieldable ? "방패:" : "함포:";
 
-        guiGraphics.drawString(font, "Name:", leftPos, topPos + gap * 0, FONT_COLOR, false);
-        guiGraphics.drawString(font, "Type:", leftPos, topPos + gap * 1, FONT_COLOR, false);
-        guiGraphics.drawString(font, "Crew:", leftPos, topPos + gap * 2, FONT_COLOR, false);
-        guiGraphics.drawString(font, "Speed " + unit + ":", leftPos, topPos + gap * 3, FONT_COLOR, false);
-        guiGraphics.drawString(font, "Damage:", leftPos, topPos + gap * 4, FONT_COLOR, false);
+        guiGraphics.drawString(font, "이름:", leftPos, topPos + gap * 0, FONT_COLOR, false);
+        guiGraphics.drawString(font, "종류:", leftPos, topPos + gap * 1, FONT_COLOR, false);
+        guiGraphics.drawString(font, "선원:", leftPos, topPos + gap * 2, FONT_COLOR, false);
+        guiGraphics.drawString(font, "속력:", leftPos, topPos + gap * 3, FONT_COLOR, false);
+        guiGraphics.drawString(font, "피해:", leftPos, topPos + gap * 4, FONT_COLOR, false);
         guiGraphics.drawString(font, attachment, leftPos, topPos + gap * 5, FONT_COLOR, false);
 
         guiGraphics.drawString(font, name, leftPos2, topPos + gap * 0, FONT_COLOR, false);
         guiGraphics.drawString(font, smallShipType, leftPos2, topPos + gap * 1, FONT_COLOR, false);
         guiGraphics.drawString(font, currentPassengers + "/" + maxPassengers, leftPos2, topPos + gap * 2, FONT_COLOR, false);
-        guiGraphics.drawString(font, currentSpeed + "/" + maxSpeed, leftPos2, topPos + gap * 3, FONT_COLOR, false);
+        guiGraphics.drawString(font, String.format("%2.1f %s", currentSpeed, unit), leftPos2, topPos + gap * 3, FONT_COLOR, false);
         guiGraphics.drawString(font, dmg + "%", leftPos2, topPos + gap * 4, FONT_COLOR, false);
         guiGraphics.drawString(font, currentAttachment + "/" + maxAttachment, leftPos2, topPos + gap * 5, FONT_COLOR, false);
 
