@@ -1,26 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "galley",
-  "pattern": [
-    "lll",
-    "csc",
-    "bbb"
-  ],
-  "key": {
-    "s": {
-      "item": "smallships:sail"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "313",
+      "000",
+      "222"
+    ],
+    "key": {
+      "0": {
+        "item": "smallships:spruce_cog"
+      },
+      "1": {
+        "item": "smallships:sail"
+      },
+      "2": {
+        "item": "minecraft:chest"
+      },
+      "3": {
+        "item": "imperial_custom_mod:tier_2_spruce"
+      }
     },
-    "c": {
-      "item": "minecraft:chest"
-    },
-    "l": {
-      "item": "minecraft:lead"
-    },
-    "b": {
-      "item": "minecraft:spruce_boat"
+    "result": {
+      "item": "smallships:spruce_galley",
+      "count": 1
     }
-  },
-  "result": {
-    "item": "smallships:spruce_galley"
   }
-}

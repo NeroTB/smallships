@@ -1,29 +1,27 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "drakkar",
-  "pattern": [
-    "sys",
-    "xlx",
-    "bbb"
-  ],
-  "key": {
-    "y": {
-      "item": "smallships:sail"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "313",
+      "000",
+      "222"
+    ],
+    "key": {
+      "0": {
+        "item": "smallships:spruce_cog"
+      },
+      "1": {
+        "item": "smallships:sail"
+      },
+      "2": {
+        "item": "minecraft:shield"
+      },
+      "3": {
+        "item": "imperial_custom_mod:tier_2_spruce"
+      }
     },
-    "x": {
-      "item": "minecraft:chest"
-    },
-    "l": {
-      "item": "minecraft:lead"
-    },
-    "s": {
-      "item": "minecraft:string"
-    },
-    "b": {
-      "item": "minecraft:spruce_boat"
+    "result": {
+      "item": "smallships:spruce_drakkar",
+      "count": 1
     }
-  },
-  "result": {
-    "item": "smallships:spruce_drakkar"
   }
-}

@@ -1,26 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "galley",
+  "category": "misc",
   "pattern": [
-    "lll",
-    "csc",
-    "bbb"
+    "313",
+    "000",
+    "222"
   ],
   "key": {
-    "s": {
+    "0": {
+      "item": "smallships:mangrove_cog"
+    },
+    "1": {
       "item": "smallships:sail"
     },
-    "c": {
+    "2": {
       "item": "minecraft:chest"
     },
-    "l": {
-      "item": "minecraft:lead"
-    },
-    "b": {
-      "item": "minecraft:mangrove_boat"
+    "3": {
+      "item": "imperial_custom_mod:tier_2_mangrove"
     }
   },
   "result": {
-    "item": "smallships:mangrove_galley"
+    "item": "smallships:mangrove_galley",
+    "count": 1
   }
 }

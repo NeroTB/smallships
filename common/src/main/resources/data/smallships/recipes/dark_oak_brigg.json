@@ -1,22 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group":"brigg",
+  "category": "misc",
   "pattern": [
-    "sls",
-    "bbb"
+    "313",
+    "000",
+    "222"
   ],
   "key": {
-    "l": {
-      "item": "minecraft:lead"
+    "0": {
+      "item": "smallships:dark_oak_galley"
     },
-    "s": {
+    "1": {
       "item": "smallships:sail"
     },
-    "b": {
-      "item": "minecraft:dark_oak_chest_boat"
+    "2": {
+      "item": "minecraft:chest"
+    },
+    "3": {
+      "item": "imperial_custom_mod:tier_3_dark_oak"
     }
   },
   "result": {
-    "item": "smallships:dark_oak_brigg"
+    "item": "smallships:dark_oak_brigg",
+    "count": 1
   }
 }

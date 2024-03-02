@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group":"cog",
-  "pattern": [
-    "lsl",
-    "bbb"
-  ],
-  "key": {
-    "l": {
-      "item": "minecraft:lead"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "010",
+      "000",
+      "222"
+    ],
+    "key": {
+      "0": {
+        "item": "imperial_custom_mod:tier_2_birch"
+      },
+      "1": {
+        "item": "smallships:sail"
+      },
+      "2": {
+        "item": "minecraft:chest"
+      }
     },
-    "s": {
-      "item": "smallships:sail"
-    },
-    "b": {
-      "item": "minecraft:birch_boat"
+    "result": {
+      "item": "smallships:birch_cog",
+      "count": 1
     }
-  },
-  "result": {
-    "item": "smallships:birch_cog"
   }
-}

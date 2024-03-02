@@ -1,22 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "cog",
-  "pattern": [
-    "lsl",
-    "bbb"
-  ],
-  "key": {
-    "s": {
-      "item": "smallships:sail"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "010",
+      "000",
+      "222"
+    ],
+    "key": {
+      "0": {
+        "item": "imperial_custom_mod:tier_2_dark_oak"
+      },
+      "1": {
+        "item": "smallships:sail"
+      },
+      "2": {
+        "item": "minecraft:chest"
+      }
     },
-    "l": {
-      "item": "minecraft:lead"
-    },
-    "b": {
-      "item": "minecraft:dark_oak_boat"
+    "result": {
+      "item": "smallships:dark_oak_cog",
+      "count": 1
     }
-  },
-  "result": {
-    "item": "smallships:dark_oak_cog"
   }
-}

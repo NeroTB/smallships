@@ -1,26 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "galley",
+  "category": "misc",
   "pattern": [
-    "lll",
-    "csc",
-    "bbb"
+    "313",
+    "000",
+    "222"
   ],
   "key": {
-    "s": {
+    "0": {
+      "item": "smallships:oak_cog"
+    },
+    "1": {
       "item": "smallships:sail"
     },
-    "c": {
+    "2": {
       "item": "minecraft:chest"
     },
-    "l": {
-      "item": "minecraft:lead"
-    },
-    "b": {
-      "item": "minecraft:oak_boat"
+    "3": {
+      "item": "imperial_custom_mod:tier_2_oak"
     }
   },
   "result": {
-    "item": "smallships:oak_galley"
+    "item": "smallships:oak_galley",
+    "count": 1
   }
 }

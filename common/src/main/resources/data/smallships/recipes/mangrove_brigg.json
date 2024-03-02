@@ -1,22 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group":"brigg",
+  "category": "misc",
   "pattern": [
-    "sls",
-    "bbb"
+    "313",
+    "000",
+    "222"
   ],
   "key": {
-    "l": {
-      "item": "minecraft:lead"
+    "0": {
+      "item": "smallships:mangrove_galley"
     },
-    "s": {
+    "1": {
       "item": "smallships:sail"
     },
-    "b": {
-      "item": "minecraft:mangrove_chest_boat"
+    "2": {
+      "item": "minecraft:chest"
+    },
+    "3": {
+      "item": "imperial_custom_mod:tier_3_mangrove"
     }
   },
   "result": {
-    "item": "smallships:mangrove_brigg"
+    "item": "smallships:mangrove_brigg",
+    "count": 1
   }
 }

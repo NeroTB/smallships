@@ -1,29 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "drakkar",
+  "category": "misc",
   "pattern": [
-    "sys",
-    "xlx",
-    "bbb"
+    "313",
+    "000",
+    "222"
   ],
   "key": {
-    "y": {
+    "0": {
+      "item": "smallships:jungle_cog"
+    },
+    "1": {
       "item": "smallships:sail"
     },
-    "x": {
-      "item": "minecraft:chest"
+    "2": {
+      "item": "minecraft:shield"
     },
-    "l": {
-      "item": "minecraft:lead"
-    },
-    "s": {
-      "item": "minecraft:string"
-    },
-    "b": {
-      "item": "minecraft:jungle_boat"
+    "3": {
+      "item": "imperial_custom_mod:tier_2_jungle"
     }
   },
   "result": {
-    "item": "smallships:jungle_drakkar"
+    "item": "smallships:jungle_drakkar",
+    "count": 1
   }
 }

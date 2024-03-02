@@ -1,26 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "galley",
+  "category": "misc",
   "pattern": [
-    "lll",
-    "csc",
-    "bbb"
+    "313",
+    "000",
+    "222"
   ],
   "key": {
-    "s": {
+    "0": {
+      "item": "smallships:jungle_cog"
+    },
+    "1": {
       "item": "smallships:sail"
     },
-    "c": {
+    "2": {
       "item": "minecraft:chest"
     },
-    "l": {
-      "item": "minecraft:lead"
-    },
-    "b": {
-      "item": "minecraft:jungle_boat"
+    "3": {
+      "item": "imperial_custom_mod:tier_2_jungle"
     }
   },
   "result": {
-    "item": "smallships:jungle_galley"
+    "item": "smallships:jungle_galley",
+    "count": 1
   }
 }

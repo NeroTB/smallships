@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
     "#G#",
-    "###"
+    "GGG",
+    "#G#"
   ],
   "key": {
     "#": {
-      "item": "minecraft:iron_nugget"
+      "item": "minecraft:iron_ingot"
     },
     "G": {
       "item": "minecraft:gunpowder"
@@ -15,7 +15,7 @@
   },
   "result": {
     "item": "smallships:cannon_ball",
-    "count": 2
+    "count": 4
   }
 }
 
